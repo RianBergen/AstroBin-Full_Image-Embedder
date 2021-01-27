@@ -1,0 +1,32 @@
+<html>
+	<!-- Styles -->
+	<style>
+		#IFRAME-CONTAINER {
+			background-color: red;
+			position: relative;
+			overflow: hidden;
+			width: 100%;
+			
+			/* 56.25% The 16x9 Aspect Ratio */
+			/* 80px   The Average Height Of The Top Bar */
+			/* 100px  The Average Height Of The PixInsight Coordinates Bar At The Bottom */
+			padding-top: calc(56.25% + 80px + 100px);
+		}
+		
+		#IFRAME-IMAGE {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+		}
+	</style>
+</html>
+<body>
+	<div id="IFRAME-CONTAINER">
+		<!-- Replace Source Contents With Your Own Link, Or A Variable That Contains Your Link -->
+		<iframe id="IFRAME-IMAGE" scrolling="no" src="https://www.astrobin.com/full/sp75h7/B/"></iframe>
+	</div>
+</body>
